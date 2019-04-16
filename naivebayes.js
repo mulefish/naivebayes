@@ -143,8 +143,6 @@ if (require.main === module) {
         ["windy","t____no"],
     ]
     let B = getP(findNo, lookup, target, "no", total, lookup["play"]["no"])
-    console.log(A, " yes")
-    console.log(B, " no")
 
     verdict( 0.0052, A, "1 of 5 : Pre-normalization: the positive condition is ")
     verdict( 0.02, B, "2 of 5 : Pre-normalization: the negative condition is ")
