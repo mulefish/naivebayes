@@ -20,7 +20,7 @@
 
 
 
-function getLookup(dataset, keys, target) { 
+   function getLookup(dataset, keys, target) { 
     let p = {} 
     let index = -1
     keys.forEach((key,i)=>{
@@ -68,7 +68,7 @@ function getP(find, lookup, target, targetFeature, targetTotal,denomoinator) {
         } else { 
             p *= ( lookup[feature][state] / denomoinator ) 
         }
-        console.log( lookup[feature][state] + " feature: " + feature + "  state: " + state )
+        //console.log( lookup[feature][state] + " feature: " + feature + "  state: " + state )
     })  
     p *= ( lookup[target][targetFeature] / targetTotal )
     return p
